@@ -18,6 +18,69 @@
 
     </div>
 
+    <div id="tabela">
+        <table border="1" cellspacing = "2" height="150px" width="300px">
+            <caption>Nossos Clientes</caption>
+            
+            <thead>
+                <tr>
+                    <td>Empresa</td>
+                    <td>País</td>
+                    <td>Estado</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>HLJS</td>
+                    <td>Alemanha</td>
+                    <td>Akhein</td>
+                </tr>
+                <tr>
+                    <td>Umbrela</td>
+                    <td colspan=2>EUA</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>Nome</td>
+                    <td colspan=2>Endereço</td>
+                </tr>
+            </tfoot>
+
+        </table>
+    </div>
+
+    <br>
+
+    <div class=”contato-form”>
+
+        <form name="form_cliente" method="get" width="200px">
+            <legend>Nome:</legend>
+            <input type="text" maxlength = "100" placeholder="Seu nome" name="nome"/>
+
+            <legend>Email:</legend>
+            <input type="email" maxlength = "100" placeholder="Seu email" name="email"/>
+        
+            <legend>Sexo:</legend>
+            <select name="sexo" size="1">
+
+                <option selected> Masculino </option>
+               
+                <option> Feminino </option>
+               
+            </select>
+
+            <legend>Observação:</legend>
+            <textarea name="obs" cols = "30" rows = "3"></textarea>
+
+            <br>
+            <button type="submit" value="enviar" name="enviar">Enviar</button>
+        </form>
+
+    </div>
+
 </body>
 
 </html>
